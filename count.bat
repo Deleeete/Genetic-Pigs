@@ -1,6 +1,6 @@
 :START
 @echo oFF
-title 基因分析工具
+title count
 setlocal enabledelayedexpansion
 set c0=0
 set c1=0
@@ -17,9 +17,9 @@ set Y=Y
 
 
 
-set /p name=  输入猪名并回车:     
+set /p name=  Input name:     
 
-echo ----------------解析基因中...-------------------
+echo ----------------counting...-------------------
 echo ------------------------------------------------     
 echo ------------------------------------------------
 
@@ -34,17 +34,17 @@ echo ------------------------------------------------
 
 :SEX
  for /f "tokens=2" %%u in (%name%.txt) do (
-   if %%u==%X% (echo 性别：FEMALE
+   if %%u==%X% (echo Gender：FEMALE
 set s=雌性 )
-   if %%u==%Y% (echo 性别：MALE 
+   if %%u==%Y% (echo Gender：MALE 
 set s=雄性)
 )
 
 :SPECIES
-echo                 0基因个数：%c0%
-echo                 1基因个数：%c1%
-echo                 2基因个数：%c2%
-echo                 3基因个数：%c3%
+echo                 0：%c0%
+echo                 1：%c1%
+echo                 2：%c2%
+echo                 3：%c3%
 echo                  %E%
 
 %0
