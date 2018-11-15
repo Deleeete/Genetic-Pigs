@@ -1,6 +1,6 @@
 :START
 @echo oFF
-title »ùÒò·ÖÎö¹¤¾ß
+title åŸºå› åˆ†æžå·¥å…·
 setlocal enabledelayedexpansion
 set c0=0
 set c1=0
@@ -17,9 +17,9 @@ set Y=Y
 
 
 
-set /p name=  ÊäÈëÖíÃû²¢»Ø³µ:     
+set /p name=  è¾“å…¥çŒªåå¹¶å›žè½¦:     
 
-echo ----------------½âÎö»ùÒòÖÐ...-------------------
+echo ----------------è§£æžåŸºå› ä¸­...-------------------
 echo ------------------------------------------------     
 echo ------------------------------------------------
 
@@ -34,17 +34,17 @@ echo ------------------------------------------------
 
 :SEX
  for /f "tokens=2" %%u in (%name%.txt) do (
-   if %%u==%X% (echo ÐÔ±ð£ºFEMALE
-set s=´ÆÐÔ )
-   if %%u==%Y% (echo ÐÔ±ð£ºMALE 
-set s=ÐÛÐÔ)
+   if %%u==%X% (echo æ€§åˆ«ï¼šFEMALE
+set s=é›Œæ€§ )
+   if %%u==%Y% (echo æ€§åˆ«ï¼šMALE 
+set s=é›„æ€§)
 )
 
 :SPECIES
-echo                 0»ùÒò¸öÊý£º%c0%
-echo                 1»ùÒò¸öÊý£º%c1%
-echo                 2»ùÒò¸öÊý£º%c2%
-echo                 3»ùÒò¸öÊý£º%c3%
+echo                 0åŸºå› ä¸ªæ•°ï¼š%c0%
+echo                 1åŸºå› ä¸ªæ•°ï¼š%c1%
+echo                 2åŸºå› ä¸ªæ•°ï¼š%c2%
+echo                 3åŸºå› ä¸ªæ•°ï¼š%c3%
 echo                  %E%
 
 %0
